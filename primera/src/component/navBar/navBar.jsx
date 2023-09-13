@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidget from '../CartWidget/CartWidget';
+import './NavBar.css'
 
 function NavBar( {texto, numero, valor, sumar}) {
     console.log(numero, valor, sumar)
@@ -30,7 +31,7 @@ function NavBar( {texto, numero, valor, sumar}) {
         </Navbar.Collapse>
       </Container>
       <CartWidget/>
-      {texto}
+      <h1> className='soyTexto'{texto}</h1>
     </Navbar>
   );
 }
