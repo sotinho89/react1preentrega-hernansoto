@@ -11,7 +11,7 @@ function App(){
     return
     (
         <div>
-            <NavBar  texto= ´soy un texto' numero={1} valor={true}sumar={sumar}/>
+            <NavBar texto= 'soy un texto' numero={1} valor={true}sumar={sumar}/>
         </div>
     )
 }
