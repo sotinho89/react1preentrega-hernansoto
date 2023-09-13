@@ -2,8 +2,10 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import CartWidget from '../CartWidget/CartWidget';
 
-function NavBar() {
+function NavBar( {texto, numero, valor, sumar}) {
+    console.log(numero, valor, sumar)
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
@@ -27,6 +29,8 @@ function NavBar() {
           </Nav>
         </Navbar.Collapse>
       </Container>
+      <CartWidget/>
+      {texto}
     </Navbar>
   );
 }
